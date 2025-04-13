@@ -1,0 +1,11 @@
+{
+    "core.debugprint": "[InfiniteWeapons][DEBUG]: {message}",
+    "core.config": "[InfiniteWeapons] Konfiguration geladen",
+    "core.init": "[InfiniteWeapons] InfiniteWeapons initialisiert",
+    "core.failed.init": "[InfiniteWeapons] Initialisierung von WeaponServices über die Speichersignatur fehlgeschlagen (ist die Signatur noch gültig oder hat Valve das geändert?): {error}",
+    "admin.unknown_command": "[InfiniteWeapons] Unbekannter Befehl: {command}",
+    "admin.disable": "[InfiniteWeapons] InfiniteWeapons deaktiviert.",
+    "admin.enable": "[InfiniteWeapons] InfiniteWeapons aktiviert.",
+    "admin.reload": "[InfiniteWeapons] Konfiguration neu geladen",
+    "admin.update": "[InfiniteWeapons] Signatur aktualisiert"
+}
