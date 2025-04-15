@@ -29,6 +29,13 @@ This plugin automatically creates a readable JSON configuration file. This confi
   "enabled": true,
   "debug": true,
   "signature_file": "InfiniteWeapons.json",
+  "permissions": {
+    "@css/root": {
+      "max_primary_weapons": 5,
+      "max_secondary_weapons": 5
+    }
+  },
+  "permissions_is_whitelist": false,
   "max_primary_weapons": 2,
   "max_secondary_weapons": 2,
   "override_signature_windows": "",
@@ -48,6 +55,14 @@ Debug mode. Only necessary during development or testing.
 ### signature_file
 
 File to write the signature too. Defaults to *InfiniteWeapons.json* to avoid conflicts when CounterstrikeSharp gets updated. Can be changed to whatever you like.
+
+### permissions
+
+Allows to add different permissions with different amount of weapons for players in this group. Only checks until first occurence for a player is found.
+
+### permissions_is_whitelist
+
+Whether or not a player must have the correct permission to use infinite weapons.
 
 ### max_primary_weapons
 
@@ -80,7 +95,7 @@ infiniteweapons enable
 
 #### update
 
-This reloads the configuration from the disk and updates the signature in the gamedata.json file with the values from the config file (if not empty). Otherwise it overwrites it with the integrated last-known signature.
+This reloads the configuration from the disk and updates the signature in the signature file with the values from the config (if not empty). Otherwise it overwrites it with the integrated last-known signature.
 
 #### reload
 
