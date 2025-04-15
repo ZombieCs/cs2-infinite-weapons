@@ -10,6 +10,8 @@ namespace InfiniteWeapons
         [JsonPropertyName("enabled")] public bool Enabled { get; set; } = true;
         // debug prints
         [JsonPropertyName("debug")] public bool Debug { get; set; } = false;
+        // file to save signature too
+        [JsonPropertyName("signature_file")] public string SignatureFile { get; set; } = "InfiniteWeapons.json";
         // maximum primary weapons
         [JsonPropertyName("max_primary_weapons")] public int MaxPrimaryWeapons { get; set; } = 2;
         // maximum secondary weapons

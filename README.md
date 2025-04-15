@@ -28,6 +28,7 @@ This plugin automatically creates a readable JSON configuration file. This confi
 {
   "enabled": true,
   "debug": true,
+  "signature_file": "InfiniteWeapons.json",
   "max_primary_weapons": 2,
   "max_secondary_weapons": 2,
   "override_signature_windows": "",
@@ -43,6 +44,10 @@ Whether this plug-in is enabled or not.
 ### debug
 
 Debug mode. Only necessary during development or testing.
+
+### signature_file
+
+File to write the signature too. Defaults to *InfiniteWeapons.json* to avoid conflicts when CounterstrikeSharp gets updated. Can be changed to whatever you like.
 
 ### max_primary_weapons
 

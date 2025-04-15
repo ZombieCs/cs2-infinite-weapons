@@ -12,7 +12,18 @@ namespace InfiniteWeapons
         private void UpdateGamedata()
         {
             DebugPrint("Checking gamedata...");
-            string gamedataPath = Path.Combine(Server.GameDirectory, "csgo", "addons", "counterstrikesharp", "gamedata", "gamedata.json");
+            string gamedataPath = Path.Combine(Server.GameDirectory, "csgo/addons/counterstrikesharp/gamedata", Config.SignatureFile);
+            // check if file exists and create otherwise
+            if (!File.Exists(gamedataPath))
+            {
+                DebugPrint("Gamedata file not found, creating new one...");
+                Directory.CreateDirectory(Path.GetDirectoryName(gamedataPath)!);
+                File.WriteAllText(gamedataPath, "{}");
+            }
+            else
+            {
+                DebugPrint("Gamedata file found");
+            }
             // Load and parse JSON
             string json = File.ReadAllText(gamedataPath);
             if (JsonSerializer.Deserialize<Dictionary<string, object>>(json) is not Dictionary<string, object> gamedata)
