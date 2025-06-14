@@ -1,3 +1,6 @@
+> [!CAUTION]
+> This plug-in will likely break with every CS2 update. You'll need to update the signature for either Windows or Linux on your own. If you happy to share the current signatures I will update this plug-in accordingly. You can check/ask also in the [Discord CSSharp Community](https://discord.com/channels/1160907911501991946/1361021998159102092/1361021998159102092).
+
 # CounterstrikeSharp - Infinite Weapons
 
 [![UpdateManager Compatible](https://img.shields.io/badge/CS2-UpdateManager-darkgreen)](https://github.com/Kandru/cs2-update-manager/)
